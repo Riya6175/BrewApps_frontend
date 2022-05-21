@@ -1,0 +1,22 @@
+.Cards{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
+.grid-css{
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    gap: 20px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+}
+/* 
+@media (max-width: 400px ) {
+  .grid-css { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 200px) {
+  .grid-css { grid-template-columns: repeat(1, 1fr); }
+} */

@@ -1,0 +1,45 @@
+.image{
+    height: 300px;
+    width: 100%;
+    display: inline;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.black{
+    position: absolute;
+    display: inline;
+    background-color: black;
+    height: 140px;
+    width: 100%;
+    top: 180px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.main-div{
+    height: 325px;
+    position: relative;
+    margin-left: 5%;
+    margin-top: 4%;
+    
+}
+
+.information{
+    color: aliceblue;
+    margin-left: 5%;
+    background-color: rgba(40, 37, 37, 0.92);
+    width: 40%;
+    padding-left: 3%;
+    padding: 1% 1% 1% 3%;
+    margin-bottom: 3%;
+    border-radius: 8px;
+}
+
+.image-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: aliceblue;
+    margin-left: 5%;
+}
+
