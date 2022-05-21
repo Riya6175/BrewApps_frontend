@@ -25,6 +25,11 @@
     
 }
 
+.main-div:hover{
+    transform: scale(1.08);
+    transition: ease-in-out 0.3s;
+}
+
 .information{
     color: aliceblue;
     margin-left: 5%;
