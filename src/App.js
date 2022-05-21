@@ -7,14 +7,16 @@ import './App.css';
 
 function App() {
   const [carddata, setcarddata] = useState(null)
+  const [staticcard, setstaticcard] = useState(null)
   const [filter, setfilter] = useState("none")
   const [sorteddata, setsorteddata] = useState(null) 
   useEffect(() => {
-    axios.get(`http://localhost:8081`)
+    axios.get(`https://photoapp-be.herokuapp.com/`)
       .then(res => {
         const data = res.data
         // const parseddata = JSON.parse(DataTransferItemList);
         setcarddata(data)
+        setstaticcard(data)
       })
   
     return () => {
@@ -22,7 +24,7 @@ function App() {
   },[])
 
   useEffect(() => {
-    var sortdata = carddata
+    var sortdata = staticcard
     if(filter == "24h Trending"){
       sortdata.exhibits.sort((a,b) => b.likes - a.likes)
       setsorteddata(sortdata)
